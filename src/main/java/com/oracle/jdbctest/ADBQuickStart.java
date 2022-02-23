@@ -21,9 +21,12 @@ public class ADBQuickStart {
         // to pass TNS_ADMIN as part of a connection URL.
         // TNS_ADMIN - Should be the path where the client credentials zip (wallet_dbname.zip) file is downloaded.
         // dbname_medium - It is the TNS alias present in tnsnames.ora.
-        final String DB_URL="jdbc:oracle:thin:@testdatabase_medium?TNS_ADMIN=C:/Users/15142/Downloads/Wallet_testdatabase";
+      //  final String DB_URL="jdbc:oracle:thin:@testdatabase_medium?TNS_ADMIN=C:/Users/15142/Downloads/Wallet_testdatabase";
         // Update the Database Username and Password to point to your Autonomous Database
-        final String DB_USER = "admin";
+
+        final String DB_URL="jdbc:oracle:thin:@ballupdatabase_medium?TNS_ADMIN=C:/Users/15142/Downloads/Wallet_BallUPDatabase";
+
+        final String DB_USER = "alpha";
         String DB_PASSWORD = "null" ;
         final String CONN_FACTORY_CLASS_NAME="oracle.jdbc.pool.OracleDataSource";
 
@@ -82,7 +85,7 @@ public class ADBQuickStart {
      * Selects 20 rows from the SH (Sales History) Schema that is the accessible to all
      * the database users of autonomous database.
      */
-    private static void doSQLWork(Connection conn) throws SQLException {
+ /*   private static void doSQLWork(Connection conn) throws SQLException {
         String queryStatement = "SELECT CUST_ID, CUST_FIRST_NAME, CUST_LAST_NAME, CUST_CITY,"
                 + "CUST_CREDIT_LIMIT FROM SH.CUSTOMERS WHERE ROWNUM < 20 order by CUST_ID";
 
@@ -104,5 +107,5 @@ public class ADBQuickStart {
             System.out.println("\nCongratulations! You have successfully used Oracle Autonomous Database\n");
         }
     } // End of doSQLWork
-
+*/
 } // End of ADBQuickStart

@@ -18,16 +18,16 @@
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc11</artifactId>
-            <version>21.4.0.0.1</version>
+            <version>21.1.0.0</version>
             <scope>system</scope>
-            <systemPath>C:/Users/15142/Documents/ADBQuickstart/lib/ojdbc8-21.4.0.0.1.jar</systemPath>
+            <systemPath>${basedir}/lib/ojdbc11-full/ojdbc11.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ucp</artifactId>
-            <version>21.4.0.0.1</version>
+            <version>21.1.0.0</version>
             <scope>system</scope>
-            <systemPath>C:/Users/15142/Documents/ADBQuickstart/lib/ucp-21.4.0.0.1.jar</systemPath>
+            <systemPath>${basedir}/lib/ojdbc11-full/ucp11.jar</systemPath>
         </dependency>
 
     </dependencies>
